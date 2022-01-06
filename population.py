@@ -28,7 +28,7 @@ unit_geo.iloc[:,3] = unit_geo.iloc[:,3].str[:2]
 
 # Preprocess and assign column names
 # NOTE: status variable stores the information of the data point status, i.e. is the data successfully retrieved (NaN), estimated (e), definition differs (d), not applicable (z), definition differs and estimated (de), or break in time series and estimated (be)
-years = np.flip(np.arange(2009, 2021))
+years = np.arange(2009, 2021)
 status = np.full((1, years.size), [str(year)+'_status' for year in years])
 cols = np.empty((years.size + status.size, ), dtype=status.dtype)
 cols[0::2] = years
