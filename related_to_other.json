@@ -1,0 +1,41 @@
+{
+  "Population": {
+    "path": "RelatedToTransport/tgs00096.tsv",
+    "split_which": 0,
+    "split_by": ",",
+    "keep_which": 3,
+    "extract_which": 0,
+    "info_cols": [
+      "Country"
+    ],
+    "year_from": 2009,
+    "year_to": 2020,
+    "flip": "False",
+    "melt_by": "Year",
+    "target_name": "PopulationCount",
+    "convert_which": "PopulationCount",
+    "aggregate_by": [
+      "Country",
+      "Year"
+    ],
+    "reshape_by": "None"
+  },
+  "Co2Emissions": {
+    "path": "RelatedToTransport/sdg_12_30.tsv",
+    "split_which": "None",
+    "split_by": "None",
+    "keep_which": "None",
+    "extract_which": "None",
+    "info_cols": [
+      "Country"
+    ],
+    "year_from": 2000,
+    "year_to": 2019,
+    "flip": "False",
+    "melt_by": "Year",
+    "target_name": "Co2Emission",
+    "convert_which": "Co2Emission",
+    "aggregate_by": "None",
+    "reshape_by": "None"
+  }
+}
